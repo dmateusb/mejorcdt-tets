@@ -45,27 +45,5 @@ The `ProfitabilityCalculator` is a Python script designed to process financial d
 
 3. Run the script:
     ```sh
-    python profitability_calculator.py
+    python main.py
     ```
-
-## Example
-
-Here is an example of how to use the `ProfitabilityCalculator` class in your script:
-
-```python
-    from profitability_calculator import ProfitabilityCalculator
-
-    # Initialize the calculator
-    calculator = ProfitabilityCalculator()
-
-    # Calculate late payment interest
-    annual_rate = 0.10  # 10% annual anticipated rate
-    late_payment_interest = calculator.calculate_late_payment_interest(annual_rate)
-    print(f"Late Payment Interest: {late_payment_interest:.4f}")
-
-    # Calculate ROI
-    amount = 1000  # Initial investment amount
-    days = 30  # Investment period in days
-    roi = calculator.calculate_roi(amount, days)
-    print(f"ROI: {roi}")
-```
